@@ -1,0 +1,321 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #eaf8ff;
+}
+
+.yess_top {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  background-image: url(./images/Homa.png);
+  display: flex;
+  align-items: center;
+  z-index: 101;
+}
+
+.yess_top_hg {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  background: #dbe6fd;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+
+}
+
+.yess_top_index {
+  width: 100%;
+  height: 38px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 90;
+  transition: top 0.5s;
+}
+
+.alert_top_index {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 90;
+  transition: top 0.5s;
+  display: none;
+}
+
+
+.tieme {
+  font-weight: bold;
+  font-family: "微软雅黑";
+  font-size: 18px;
+  margin-left: 35px;
+}
+
+.yess_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.yess_bottom {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  height: 60px;
+
+  z-index: 100;
+}
+
+.yess_body {
+  width: 100%;
+  height: calc(100vh - 125px);
+  margin-top: 45px;
+  border: 1px solid rgb(255, 0, 0);
+  overflow-y: scroll;
+}
+
+img {
+  width: 100%;
+
+}
+
+.images_hover {
+  position: absolute;
+  top: 630px;
+  right: 0;
+}
+
+.images_hover img {
+  width: 100px;
+}
+
+
+
+.yess_body_gundongt {
+  height: 120px;
+  background: #f6f7fb;
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.yess_body_Classtable {
+  display: flex;
+  padding: 25px;
+  overflow: hidden;
+  border: 10px solid black;
+}
+
+.yess_body_lsit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: #f6f7fb;
+}
+
+
+
+#banner {
+
+  width: 380px;
+  height: 82px;
+
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#imglist img {
+  width: 380px;
+
+}
+
+#imglist {
+  width: 2280px;
+}
+
+#imglist li {
+  float: left;
+}
+
+#icolist ul {
+  display: flex;
+  left: 0;
+  top: 80px;
+  align-items: center;
+  justify-content: center;
+  background: #f6f7fb;
+
+}
+
+#icolist li {
+  margin: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: #9ebef8;
+
+}
+
+.yess_bottom_img {
+  width: 100%;
+  height: 80px;
+}
+
+.yess_body_img {
+  position: relative;
+}
+
+.yess_body_btn {
+  position: absolute;
+  top: 248px;
+  left: 133px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.yess_body_two {
+  display: none;
+}
+
+.yess_body_two {
+  position: fixed;
+  width: 380;
+  right: 0;
+  animation: moveFromTop .3s linear;
+  /* 添加过渡动画 */
+}
+
+.alert_tier {
+  width: 100%;
+  height: calc(100vh - 47px);
+  position: fixed;
+  top: 45px;
+  left: 0;
+  z-index: 9;
+  display: none;
+}
+
+.alert_box,
+.alert_box2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 47px);
+  position: absolute;
+  right: 0px;
+  animation: moveFromTop .2s linear;
+  overflow-y: scroll;
+}
+
+.alert_box2 {
+  z-index: 105;
+  display: none;
+}
+
+
+@keyframes moveFromTop {
+  0% {
+    margin-right: -100%;
+  }
+
+  100% {
+    margin-right: 0px;
+  }
+}
+
+.yess_alert_ber {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #999999;
+  white-space: nowrap;
+  background: #fafafa;
+}
+
+.yess_alert_list {
+  align-items: center;
+}
+
+.yess_alert_ber div {
+  margin-left: 18px;
+
+}
+
+.yess_alert_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.yess_henghang {
+  display: flex;
+  padding: 0px 6px 0px 6px;
+  height: 4px;
+  background: #1881f200;
+  width: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+
+}
+
+.active {
+  display: flex;
+  padding: 0px 6px 0px 6px;
+  height: 4px;
+  background: #2b8af3;
+  width: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+
+}
+
+.activeText {
+  font-size: 25px;
+  color: #000;
+}
+
+.alert_box2_btn {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgba(176, 19, 19, 0.456);
+  top: 160px;
+  z-index: 103;
+}
+
+.alert_box3_btn {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  top: 25px;
+  z-index: 104;
+}
